@@ -31,117 +31,155 @@ html { box-sizing: border-box; }
 
 body {
 	margin: 0 auto;
-	/* width: 1100px; */
 	font-family: 'Lora';
 	font-size: 18px;
 	line-height: 1.5;
-	color: #242424;
 }
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Playfair Display', serif;
-	line-height: 1.25;
-	color: #3e606b;
+h1,h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display';
 }
-h1{
+h1 {
 	font-size: 52px;
-
-	
+	color:white;
 }
 h2{
 	font-size: 36px;
-	margin:0;
+	color:#3e606b;
 }
-/**************===HLAVIČKA===****************/
+h3 {
+	color:#3e606b;
+}
+.sekce {
+	padding: 80px 0;
+	max-width: 1100px;
+	margin: 0px auto;
+}
+/*********===HLAVIČKA===**********/
 .header {
-	display:flex;
+	display: flex;
 	justify-content: space-between;
-	margin: 30px auto;
-	width:1100px;
+	padding: 30px 0;
+	max-width:1100px;
+	margin:0px auto;
 }
+
 .logo {
-	width:170px;
+	width: 170px;
 }
-nav ul {
+nav ul{
 	display: flex;
 	list-style: none;
-	margin: 0 20px;
+	margin:0;
+	padding:0;
 }
-nav ul li {
-	margin: 0px 15px;
+nav ul li{
+	margin-left: 5px;
+
 }
 nav ul li a {
 	text-decoration: none;
-	color:black;
+	color: #242424;
+	padding: 10px 15px;
 }
-nav ul li a:hover {
-	background-color:#f195b2;
+nav ul li a:hover,
+nav ul li a:active  {
+	background-color: #f195b2;
 	border-radius: 20px;
-	padding:10px 15px;
+	color:white;
 }
-/*****===HERO SEKCE===*****/
+/*************HERO SEKCE***************/
 .hero-sekce {
-	background-image: url(/images/cupcake.jpg);
+	background: #2E2a28 url(images/cupcake.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
-	padding: 80px 0;
+
 }
 .hero {
-	width: 1100px;
-	margin:0px auto;
+	display:flex;
+	flex-direction: column;
 }
-.hero h1,
-.hero p {
+.hero p,
+.hero h1 {
 	color:white;
 	margin-right: 40%;
 }
 .hero p {
-	font-size: 24px;
 	font-style: italic;
+	font-size: 24px;
 }
-/**********===SEKCE VÍTEJTE===*************/
-.sekce {
-	max-width: 1100px;
-	margin: 0 auto;
-	padding: 80px 0;
+.hero h1{
+	margin-top: 0;
 }
+/*********************===VÍTEJTE SEKCE===****************/
 .vitejte-flex-1 {
-	display: flex;
+	display:flex;
 	justify-content: space-between;
 	align-items: center;
 }
-.vitejte-flex-2 {
-	background-color: white;
+.vitejte-flex-1 h2{
+	margin-top:0;
+	margin-bottom: 30px;
 }
-.vitejte-flex-1 img {
-	width: 100%;
-	border-radius: 5px;
+.cukrarka {
 	margin-left: 30px;
+	width:100%;
+	border-radius: 5px;
+}
+.vitejte-tlacitko {
+	margin-top: 50px;
 }
 .tlacitko-vyrobky {
-	display: inline-block;
-	background-color: #f195b2;
-	border-radius: 30px;
-	padding:20px 40px;
 	text-decoration: none;
 	color:white;
-	margin-top: 30px;
+	background-color: #f195b2;
+	border-radius: 40px;
+	padding: 20px 40px;
 }
-.tlacitko-vyrobky:hover{
-	background-color: #d2567d;
+.tlacitko-vyrobky:hover {
+	background-color:#d2567d;
 }
-/**************===NAŠE NABÍDKA===************/
+/**************===NABIDKA SEKCE===*****************/
 .nabidka {
-	background-color:#f0f0f0;
+	background-color:#f0f0f0 ;
 }
 .nabidka-flex {
-	display:flex;
-	justify-content: space-between;
-
+	display: flex;
 }
 .produkt {
-	flex: 0 0 calc((100% - 90px) / 4);
+	margin-right: 15px;	
 	background-color: white;
-	padding:0 30px;
-	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-	margin: 0 15px;
+	font-size: 15px;
+}
+.produkt-popis{
+	text-align: center;
+	padding:20px;
+}
+.nabidka-flex img {
+	width:100%;
+}
+/*******************===NÁŠ PŘÍSTUP===*************/
+.pristup-flex {
+	display: flex;
+	justify-content: center;
+}
+.peceni {
+	width:100%;
+	margin-right: 30px;
+	border-radius: 20px;
+}
+.pristup-pravy {
+	display: flex;
+	flex-direction: column;
+}
+.pristup-pravy {
+	font-size: 15px;
+}
+/***********===PATIČKA===*****************/
+.paticka {
+	background-color:#303339;
+	color:white;
+	padding:30px 0;
+	text-align: center;
+	font-size: 15px;
 }
